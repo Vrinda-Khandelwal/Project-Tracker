@@ -25,14 +25,22 @@ The focus of this project is clean component structure, predictable state manage
 src/
 ├── components/      → Reusable UI components (TextField, StatusBadge)
 ├── lib/
-│   ├── types.ts     → Shared TypeScript types
-│   └── utils.ts     → Helper functions (formatDate, statusMeta, etc.)
+    ├── seed.ts      → Mock Data Samples
+    ├── storage.ts   → local Storage Handling
+    ├── types.ts     → Shared TypeScript types
+    └── utils.ts     → Helper functions (formatDate, statusMeta, etc.)
+├── pages/
+    ├── ProjectDetailPage.tsx 
+    ├── Projectpage.tsx
+│
+│
 ├── App.tsx          → Main state management and layout
 ├── main.tsx         → Entry point
 ```
 
 1 components/ keeps UI modular and reusable.
 2 lib/ separates business logic and utilities from UI.
+3 pages/ User Interface
 3 App.tsx acts as the central data controller.
 
 This structure keeps concerns separated and improves maintainability.
